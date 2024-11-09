@@ -19,7 +19,7 @@ std::string get_network_interface(std::string iface = "") {
     // Open the file /proc/net/dev
     std::ifstream interfaces("/proc/net/dev");
     std::string line; //, iface;
-    std::array<std::string, 3> iface_list = {"eth", "wlp", "wlan"};
+    std::array<std::string, 3> iface_list = {"eth", "wlp", "wlan", "enp"};
 
     // Read each line of the file
     while (std::getline(interfaces, line)) {
